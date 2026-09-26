@@ -1,0 +1,20 @@
+---
+layout: default
+title: Art
+---
+<h1>Art</h1>
+<p>Some of my artistic endeavors.</p>
+
+<div class="art-list">
+  {% for piece in site.art %}
+  <div class="art-list-item">
+    <a href="{{ piece.url | relative_url }}">
+      <img src="{{ piece.image | relative_url }}" alt="{{ piece.title }}">
+    </a>
+    <h2>{{ piece.title }}</h2>
+    <p>{{ piece.description }}</p>
+  </div>
+  {% else %}
+  <p>No art pieces yet.</p>
+  {% endfor %}
+</div>
