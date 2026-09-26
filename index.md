@@ -21,7 +21,7 @@ title: About
 </section>
 <section class="hero">
   <div class="hero-inner">
-    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.title }}" class="hero-image">
+    <img src="{{ '/assets/images/profile.jpeg' | relative_url }}" alt="{{ site.title }}" class="hero-image">
     <div>
       <h1>Hi, I'm Karan.</h1>
       <p class="lede">{{ site.tagline }} — {{ site.description }}</p>
