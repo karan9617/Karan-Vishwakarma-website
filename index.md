@@ -4,7 +4,11 @@ title: About
 ---
 
 <section class="hero">
-  <h1>Hi, I'm Your Name.</h1>
+<div class="hero-inner">
+    <img src="{{ '/assets/images/profile.jpeg' | relative_url }}" alt="{{ site.title }}" class="hero-image">
+   
+  </div>
+  <h1>Hi, Karan.</h1>
   <p class="lede">{{ site.tagline }} — {{ site.description }}</p>
 </section>
 
@@ -18,13 +22,4 @@ title: About
   <p>
     <a href="{{ '/projects.html' | relative_url }}">See my projects →</a>
   </p>
-</section>
-<section class="hero">
-  <div class="hero-inner">
-    <img src="{{ '/assets/images/profile.jpeg' | relative_url }}" alt="{{ site.title }}" class="hero-image">
-    <div>
-      <h1>Hi, I'm Karan.</h1>
-      <p class="lede">{{ site.tagline }} — {{ site.description }}</p>
-    </div>
-  </div>
 </section>
