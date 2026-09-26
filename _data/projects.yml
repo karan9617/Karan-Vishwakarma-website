@@ -1,12 +1,12 @@
-- title: Project One
+- title: NotesAI
   description: >
-    A short, punchy description of what this project does and the problem it solves.
-  tech: [Python, Flask, PostgreSQL]
-  github: https://github.com/yourusername/project-one
-  demo: https://project-one-demo.example.com
-  image: /assets/images/project-placeholder.png
+    NotesAI enables used to store data intelligently with the power of AI and notebooks.
+  tech: [Python, Android, Java, Firebase, OpenAI]
+  github: https://github.com/karan9617/lumora
+  demo: https://play.google.com/store/apps/details?id=com.noteaiapp.keyboardai
+  image: /assets/images/notesai.webp
 
-- title: Project Two
+- title: NotesApp
   description: >
     Another project. Say what you built, why it mattered, and any interesting technical detail.
   tech: [React, TypeScript, Node.js]
