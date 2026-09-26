@@ -1,7 +1,7 @@
 - title: NotesAI
   description: >
     NotesAI enables used to store data intelligently with the power of AI and notebooks.
-  tech: [Python, Android, Java, Firebase, OpenAI]
+  tech: [Python, Android, Java, Firebase, Machine Learning]
   github: https://github.com/karan9617/lumora
   demo: https://play.google.com/store/apps/details?id=com.noteaiapp.keyboardai
   image: /assets/images/notesai.webp
@@ -29,3 +29,10 @@
   github: https://github.com/yourusername/project-three
   demo: ""
   image: /assets/images/project-placeholder.png
+
+- title: Maven
+  description: >
+    Maven is an vritual assistant software which helps in processing user request through voice and provides speech to text functionality to improve the user experience.
+  tech: [Java, JSoup, SQLite, XML, Machine Learning]
+  github: https://github.com/karan9617/Maven
+  image: /assets/images/pdfpro.png
