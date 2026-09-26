@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog
+---
+<h1>Blog</h1>
+<p>Short updates and writeups. To add one, drop a file in <code>_posts/</code> — see the README.</p>
+
+<div class="post-list">
+  {% for post in site.posts %}
+  <div class="post-list-item">
+    <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </div>
+  {% else %}
+  <p>No posts yet.</p>
+  {% endfor %}
+</div>

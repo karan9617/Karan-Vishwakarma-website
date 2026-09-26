@@ -1,0 +1,23 @@
+- title: Project One
+  description: >
+    A short, punchy description of what this project does and the problem it solves.
+  tech: [Python, Flask, PostgreSQL]
+  github: https://github.com/yourusername/project-one
+  demo: https://project-one-demo.example.com
+  image: /assets/images/project-placeholder.png
+
+- title: Project Two
+  description: >
+    Another project. Say what you built, why it mattered, and any interesting technical detail.
+  tech: [React, TypeScript, Node.js]
+  github: https://github.com/yourusername/project-two
+  demo: ""
+  image: /assets/images/project-placeholder.png
+
+- title: Project Three
+  description: >
+    A third project entry. Delete this or add more by copying the pattern above.
+  tech: [Go, Docker, AWS]
+  github: https://github.com/yourusername/project-three
+  demo: ""
+  image: /assets/images/project-placeholder.png

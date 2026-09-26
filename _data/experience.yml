@@ -1,0 +1,20 @@
+- role: Software Engineer
+  org: Company Name
+  dates: 2023 – Present
+  bullets:
+    - Built and shipped a feature that did something measurable — use a number if you have one.
+    - Worked across the stack on X, improving Y by Z%.
+    - Collaborated with a team of N engineers on...
+
+- role: Software Engineer Intern
+  org: Previous Company
+  dates: Summer 2022
+  bullets:
+    - Contributed to a project involving...
+    - Learned and applied...
+
+- role: B.S. in Computer Science
+  org: Your University
+  dates: 2019 – 2023
+  bullets:
+    - Relevant coursework, honors, or a capstone project worth mentioning.

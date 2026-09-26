@@ -1,0 +1,11 @@
+---
+layout: default
+title: Contact
+---
+<h1>Contact</h1>
+<p>The easiest ways to reach me:</p>
+<ul class="contact-list">
+  {% if site.email != "" %}<li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}
+  {% if site.github_username != "" %}<li>GitHub: <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></li>{% endif %}
+  {% if site.linkedin_username != "" %}<li>LinkedIn: <a href="https://linkedin.com/in/{{ site.linkedin_username }}">{{ site.linkedin_username }}</a></li>{% endif %}
+</ul>

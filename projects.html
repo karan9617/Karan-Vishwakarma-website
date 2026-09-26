@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+---
+<h1>Projects</h1>
+<p>Everything here is pulled from <code>_data/projects.yml</code> — add a project by copying the pattern in that file.</p>
+
+<div class="grid">
+  {% for p in site.data.projects %}
+  <article class="card">
+    <h3>{{ p.title }}</h3>
+    <p>{{ p.description }}</p>
+    <div class="tags">
+      {% for t in p.tech %}<span class="tag">{{ t }}</span>{% endfor %}
+    </div>
+    <div class="card-links">
+      {% if p.github %}<a href="{{ p.github }}">Code</a>{% endif %}
+      {% if p.demo and p.demo != "" %}<a href="{{ p.demo }}">Live demo</a>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>

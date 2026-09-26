@@ -1,0 +1,18 @@
+---
+layout: default
+title: Experience
+---
+<h1>Experience</h1>
+<p>Edit <code>_data/experience.yml</code> to change these.</p>
+
+<div class="timeline">
+  {% for e in site.data.experience %}
+  <div class="timeline-item">
+    <h3>{{ e.role }}</h3>
+    <p class="meta">{{ e.org }} · {{ e.dates }}</p>
+    <ul>
+      {% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

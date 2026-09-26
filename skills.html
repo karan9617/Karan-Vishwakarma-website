@@ -1,0 +1,15 @@
+---
+layout: default
+title: Skills
+---
+<h1>Skills</h1>
+<p>Edit <code>_data/skills.yml</code> to change these.</p>
+
+{% for group in site.data.skills %}
+<section class="skill-group">
+  <h3>{{ group.category }}</h3>
+  <div class="tags">
+    {% for item in group.items %}<span class="tag">{{ item }}</span>{% endfor %}
+  </div>
+</section>
+{% endfor %}
