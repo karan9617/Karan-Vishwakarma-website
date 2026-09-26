@@ -1,11 +1,11 @@
 - category: Languages
-  items: [Python, JavaScript, TypeScript, Go, SQL]
+  items: [Python, Java, JavaScript, TypeScript, C++, C#, SQL, HTML, CSS, Bash, Go, Ruby, PHP, Kotlin]
 
 - category: Frameworks & Libraries
-  items: [React, Node.js, Flask, Django, Express]
+  items: [React, Node.js, Flask, Django, Express, Spring Boot, TensorFlow, PyTorch, Keras, OpenCV, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Bootstrap, Material-UI, Tailwind CSS, jQuery, D3.js]
 
 - category: Tools & Platforms
-  items: [Git, Docker, AWS, PostgreSQL, Linux]
+  items: [Git, Docker, AWS, PostgreSQL, Linux, Firebase, Redis, Elasticsearch, RabbitMQ, Jenkins, Kubernetes, Terraform, Ansible, Prometheus, Grafana, JIRA, Confluence, VS Code, IntelliJ IDEA, PyCharm, Eclipse, Postman, Swagger, Figma, Adobe XD, Canva]
 
 - category: Other
-  items: [REST APIs, CI/CD, Testing, System Design]
+  items: [REST APIs, CI/CD, Testing, System Design, Agile Methodologies, Scrum, Kanban, Microservices Architecture, Monolithic Architecture, Event-Driven Architecture, Serverless Architecture, Cloud Computing, Big Data Analytics, Data Mining, Natural Language Processing, Computer Vision, Machine Learning, Deep Learning]
