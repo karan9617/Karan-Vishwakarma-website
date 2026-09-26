@@ -3,9 +3,18 @@
   --bg-alt: #171a23;
   --text: #e6e8ee;
   --text-dim: #9aa1b1;
-  --accent: #6ee7b7;
+  --accent: #10b981;
   --border: #262a36;
   --max-width: 760px;
+}
+
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-alt: #f4f5f7;
+  --text: #1a1d24;
+  --text-dim: #5c6270;
+  --accent: #059669;
+  --border: #e2e4ea;
 }
 
 * { box-sizing: border-box; }
@@ -38,6 +47,18 @@ body {
   color: var(--text);
   text-decoration: none;
 }
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-left: 18px;
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
 .site-header nav a {
   color: var(--text-dim);
   text-decoration: none;
