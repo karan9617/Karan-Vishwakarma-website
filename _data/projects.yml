@@ -8,13 +8,21 @@
 
 - title: NotesApp
   description: >
-    Another project. Say what you built, why it mattered, and any interesting technical detail.
-  tech: [React, TypeScript, Node.js]
-  github: https://github.com/yourusername/project-two
-  demo: ""
-  image: /assets/images/project-placeholder.png
+    NotesApp is a simple and intuitive note-taking application that allows users to create, organize, and manage their notes efficiently.
+  tech: [Android, Java, Node.js]
+  github: https://github.com/karan9617/Notesup
+  demo: https://play.google.com/store/apps/details?id=com.keynote.newkey.keynote&hl=en_US
+  image: /assets/images/notesapp.png
 
-- title: Project Three
+- title: PDF Pro
+  description: >
+    PDF Pro provides a single platform for creating and editing PDF's, which is quite fast and efficient. It makes viewing PDF's in your mobile incredibly easy.
+  tech: [Mobile Development, Android, AWS]
+  github: ""
+  demo: https://play.google.com/store/apps/details?id=com.PDFPro.NewApp
+  image: /assets/images/pdfpro.png
+
+- title: CNN image classification
   description: >
     A third project entry. Delete this or add more by copying the pattern above.
   tech: [Go, Docker, AWS]
