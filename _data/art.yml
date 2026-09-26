@@ -1,0 +1,19 @@
+- title: "Piece One"
+  image: /assets/images/art/piece-1.jpg
+  description: "Acrylic on canvas, 24x36 in."
+  status: available
+
+- title: "Piece Two"
+  image: /assets/images/art/piece-2.jpg
+  description: "Oil on canvas, 18x24 in."
+  status: sold
+
+- title: "Piece Three"
+  image: /assets/images/art/piece-3.jpg
+  description: "Acrylic on wood panel, 12x12 in."
+  status: available
+
+- title: "Piece Four"
+  image: /assets/images/art/piece-4.jpg
+  description: "Mixed media, 30x40 in."
+  status: available

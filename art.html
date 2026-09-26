@@ -1,20 +1,48 @@
 ---
-layout: default
+layout: gallery
 title: Art
 ---
-<h1>Art</h1>
-<p>Some of my artistic endeavors.</p>
+<div class="gallery-page">
+  <aside class="gallery-sidebar">
+    <img src="{{ '/assets/images/artist.jpg' | relative_url }}" alt="Artist portrait" class="sidebar-photo">
+    <h1 class="sidebar-name">YOUR NAME</h1>
+    <p class="sidebar-location">City, Region</p>
+    <p class="sidebar-bio">Follow me on Instagram for more updates: kv_17s</p>
+    <div class="sidebar-social">
+      <a href="https://instagram.com/kv_17s" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+    </div>
+    <a href="mailto:you@example.com" class="sidebar-message-btn">Message</a>
+    <nav class="sidebar-nav">
+      <a href="{{ '/art.html' | relative_url }}" class="active">Portfolio</a>
+      <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a href="{{ '/news.html' | relative_url }}">News</a>
+    </nav>
+  </aside>
 
-<div class="art-list">
-  {% for piece in site.art %}
-  <div class="art-list-item">
-    <a href="{{ piece.url | relative_url }}">
-      <img src="{{ piece.image | relative_url }}" alt="{{ piece.title }}">
-    </a>
-    <h2>{{ piece.title }}</h2>
-    <p>{{ piece.description }}</p>
-  </div>
-  {% else %}
-  <p>No art pieces yet.</p>
-  {% endfor %}
+  <main class="gallery-main">
+    <div class="gallery-topbar">
+      <div class="filter-pills">
+        <button class="pill active" data-filter="all">All</button>
+        <button class="pill" data-filter="available">Available</button>
+        <button class="pill" data-filter="sold">Sold</button>
+      </div>
+      <input type="text" class="gallery-search" id="gallery-search" placeholder="Piece Search">
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
+      {% for piece in site.data.art %}
+      <figure class="gallery-item art-piece" data-status="{{ piece.status }}" data-title="{{ piece.title | downcase }}">
+        <a href="{{ piece.image | relative_url }}" target="_blank" rel="noopener">
+          <img src="{{ piece.image | relative_url }}" alt="{{ piece.title | escape }}" loading="lazy">
+        </a>
+        <figcaption>
+          <h3>{{ piece.title }}</h3>
+          {% if piece.description %}<p>{{ piece.description }}</p>{% endif %}
+        </figcaption>
+      </figure>
+      {% else %}
+      <p>No art pieces yet. Add entries to <code>_data/art.yml</code> and images to <code>assets/images/art/</code>.</p>
+      {% endfor %}
+    </div>
+  </main>
 </div>
