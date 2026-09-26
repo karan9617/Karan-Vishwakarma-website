@@ -1,15 +1,16 @@
-title: Your Name
-tagline: Software Engineer
+title: Karan
+tagline: Senior Software Engineer | Machine Learning Enthusiast | Open Source Contributor
 description: >-
-  I build things with code. This site is my portfolio — projects, skills, and experience.
+  I build things with code and art. This site is my portfolio — projects, skills, and experience.
 url: "https://yourusername.github.io"      # your GitHub Pages URL, e.g. https://alice.github.io
 baseurl: ""                                 # leave "" for a user site (username.github.io),
                                              # or "/repo-name" for a project site
 
 # Contact / social — leave blank to hide a link
-email: you@example.com
-github_username: yourusername
-linkedin_username: yourusername
+email: karan.vish17@gmail.com
+github_username: karan9617
+linkedin_username: karanvishwakarma17
+instagram_username: kv_17s
 twitter_username: ""
 
 # Build settings
