@@ -57,3 +57,43 @@
   image: /assets/images/art/pieceTwelve.png
   description: "Pen art on paper, 18x24 in."
   status: available
+
+- title: "The doggo eyes"
+  image: /assets/images/art/pieceThirteen.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+- title: "The smoky eyes"
+  image: /assets/images/art/pieceFourteen.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+- title: "The doodle love"
+  image: /assets/images/art/piecefifteen.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+- title: "The doodle art"
+  image: /assets/images/art/pieceSixteen.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+- title: "The Doodle bucket"
+  image: /assets/images/art/pieceSeventeen.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+- title: "The masterpiece"
+  image: /assets/images/art/pieceEighteen.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+- title: "All Chaos"
+  image: /assets/images/art/pieceNineteen.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+- title: "The lone wolf"
+  image: /assets/images/art/Twenty.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+- title: "Doodle Art"
+  image: /assets/images/art/TwentyOne.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
