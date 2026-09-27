@@ -1,48 +1,170 @@
 ---
-layout: gallery
+layout: null
 title: Art
 ---
-<div class="gallery-page">
-  <aside class="gallery-sidebar">
-    <img src="{{ '/assets/images/profile.jpeg' | relative_url }}" alt="Artist portrait" class="sidebar-photo">
-    <h1 class="sidebar-name">Karan Vishwakarma</h1>
-    <p class="sidebar-location">Portland, OR</p>
-    <p class="sidebar-bio">Follow me on Instagram for more updates: kv_17s</p>
-    <div class="sidebar-social">
-      <a href="https://instagram.com/kv_17s" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
-    </div>
-    <a href="mailto:you@example.com" class="sidebar-message-btn">Message</a>
-    <nav class="sidebar-nav">
-      <a href="{{ '/art.html' | relative_url }}" class="active">Portfolio</a>
-      <a href="{{ '/about.html' | relative_url }}">About</a>
-      <a href="{{ '/news.html' | relative_url }}">News</a>
-    </nav>
-  </aside>
-
-  <main class="gallery-main">
-    <div class="gallery-topbar">
-      <div class="filter-pills">
-        <button class="pill active" data-filter="all">All</button>
-        <button class="pill" data-filter="available">Available</button>
-        <button class="pill" data-filter="sold">Sold</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} · {{ site.title }}</title>
+<link rel="icon" href="data:,">
+<style>
+  .gallery-body {
+    margin: 0;
+    background: #ffffff;
+    color: #1a1d24;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .gallery-page {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    gap: 40px;
+  }
+  .gallery-sidebar { width: 220px; flex-shrink: 0; }
+  .sidebar-photo {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 14px;
+    background: #eee;
+  }
+  .sidebar-name { font-size: 1.05rem; letter-spacing: 0.03em; margin: 0 0 4px; }
+  .sidebar-location { font-weight: 600; font-size: 0.85rem; margin: 0 0 10px; }
+  .sidebar-bio { font-size: 0.85rem; color: #6b7280; line-height: 1.5; margin-bottom: 16px; }
+  .sidebar-social { display: flex; gap: 8px; margin-bottom: 18px; }
+  .sidebar-social a {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    border: 1px solid #d1d5db;
+    display: flex; align-items: center; justify-content: center;
+    color: #374151; text-decoration: none; font-size: 0.8rem;
+  }
+  .sidebar-social a:hover { border-color: #9ca3af; }
+  .sidebar-message-btn {
+    display: block; text-align: center;
+    border: 1px solid #d1d5db; border-radius: 4px;
+    padding: 8px; font-size: 0.85rem;
+    color: #1a1d24; text-decoration: none; margin-bottom: 24px;
+  }
+  .sidebar-message-btn:hover { border-color: #9ca3af; }
+  .sidebar-nav { display: flex; flex-direction: column; gap: 14px; }
+  .sidebar-nav a { color: #1a1d24; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+  .sidebar-nav a.active {
+    border-bottom: 2px solid #111827;
+    padding-bottom: 2px;
+    width: fit-content;
+  }
+  .gallery-main { flex: 1; min-width: 0; }
+  .gallery-topbar {
+    display: flex; justify-content: flex-end; align-items: center;
+    gap: 12px; margin-bottom: 24px; flex-wrap: wrap;
+  }
+  .filter-pills { display: flex; gap: 8px; }
+  .pill {
+    border: 1px solid #d1d5db; background: #fff;
+    border-radius: 999px; padding: 5px 16px;
+    font-size: 0.8rem; cursor: pointer; color: #374151;
+  }
+  .pill.active { border-color: #3b82f6; color: #3b82f6; }
+  .gallery-search {
+    border: none; border-bottom: 1px solid #d1d5db;
+    padding: 6px 8px; font-size: 0.85rem; outline: none; min-width: 160px;
+  }
+  .gallery-search:focus { border-bottom-color: #3b82f6; }
+  .gallery-grid { column-count: 3; column-gap: 12px; }
+  .gallery-item {
+    display: block; margin-bottom: 12px;
+    break-inside: avoid; border-radius: 4px; overflow: hidden;
+  }
+  .gallery-item img { width: 100%; display: block; }
+  .gallery-item.hidden { display: none; }
+  .art-piece figcaption { padding: 8px 2px 0; }
+  .art-piece figcaption h3 { font-size: 0.9rem; margin: 0 0 2px; }
+  .art-piece figcaption p { font-size: 0.8rem; color: #6b7280; margin: 0; }
+  @media (max-width: 900px) { .gallery-grid { column-count: 2; } }
+  @media (max-width: 640px) {
+    .gallery-page { flex-direction: column; }
+    .gallery-grid { column-count: 2; }
+  }
+  @media (max-width: 420px) { .gallery-grid { column-count: 1; } }
+</style>
+</head>
+<body class="gallery-body">
+  <div class="gallery-page">
+    <aside class="gallery-sidebar">
+      <img src="{{ '/assets/images/profile.jpeg' | relative_url }}" alt="Artist portrait" class="sidebar-photo">
+      <h1 class="sidebar-name">Karan Vishwakarma</h1>
+      <p class="sidebar-location">Portland, OR</p>
+      <p class="sidebar-bio">Follow me on Instagram for more updates: kv_17s</p>
+      <div class="sidebar-social">
+        <a href="https://instagram.com/kv_17s" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
       </div>
-      <input type="text" class="gallery-search" id="gallery-search" placeholder="Piece Search">
-    </div>
+      <a href="mailto:you@example.com" class="sidebar-message-btn">Message</a>
+      <nav class="sidebar-nav">
+        <a href="{{ '/art.html' | relative_url }}" class="active">Portfolio</a>
+        <a href="{{ '/about.html' | relative_url }}">About</a>
+        <a href="{{ '/news.html' | relative_url }}">News</a>
+      </nav>
+    </aside>
 
-    <div class="gallery-grid" id="gallery-grid">
-      {% for piece in site.data.art %}
-      <figure class="gallery-item art-piece" data-status="{{ piece.status }}" data-title="{{ piece.title | downcase }}">
-        <a href="{{ piece.image | relative_url }}" target="_blank" rel="noopener">
-          <img src="{{ piece.image | relative_url }}" alt="{{ piece.title | escape }}" loading="lazy">
-        </a>
-        <figcaption>
-          <h3>{{ piece.title }}</h3>
-          {% if piece.description %}<p>{{ piece.description }}</p>{% endif %}
-        </figcaption>
-      </figure>
-      {% else %}
-      <p>No art pieces yet. Add entries to <code>_data/art.yml</code> and images to <code>assets/images/art/</code>.</p>
-      {% endfor %}
-    </div>
-  </main>
-</div>
+    <main class="gallery-main">
+      <div class="gallery-topbar">
+        <div class="filter-pills">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="available">Available</button>
+          <button class="pill" data-filter="sold">Sold</button>
+        </div>
+        <input type="text" class="gallery-search" id="gallery-search" placeholder="Piece Search">
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        {% for piece in site.data.art %}
+        <figure class="gallery-item art-piece" data-status="{{ piece.status }}" data-title="{{ piece.title | downcase }}">
+          <a href="{{ piece.image | relative_url }}" target="_blank" rel="noopener">
+            <img src="{{ piece.image | relative_url }}" alt="{{ piece.title | escape }}" loading="lazy">
+          </a>
+          <figcaption>
+            <h3>{{ piece.title }}</h3>
+            {% if piece.description %}<p>{{ piece.description }}</p>{% endif %}
+          </figcaption>
+        </figure>
+        {% else %}
+        <p>No art pieces yet. Add entries to <code>_data/art.yml</code> and images to <code>assets/images/art/</code>.</p>
+        {% endfor %}
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var grid = document.getElementById('gallery-grid');
+      if (!grid) return;
+      var pills = document.querySelectorAll('.pill');
+      var search = document.getElementById('gallery-search');
+      var items = Array.prototype.slice.call(grid.querySelectorAll('.gallery-item'));
+      var activeFilter = 'all';
+      function applyFilters() {
+        var query = (search && search.value || '').toLowerCase().trim();
+        items.forEach(function (item) {
+          var matchesFilter = activeFilter === 'all' || item.dataset.status === activeFilter;
+          var matchesSearch = !query || item.dataset.title.indexOf(query) !== -1;
+          item.classList.toggle('hidden', !(matchesFilter && matchesSearch));
+        });
+      }
+      pills.forEach(function (pill) {
+        pill.addEventListener('click', function () {
+          pills.forEach(function (p) { p.classList.remove('active'); });
+          pill.classList.add('active');
+          activeFilter = pill.dataset.filter;
+          applyFilters();
+        });
+      });
+      if (search) search.addEventListener('input', applyFilters);
+    })();
+  </script>
+</body>
+</html>
