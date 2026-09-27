@@ -1,19 +1,19 @@
-- title: "Piece One"
+- title: "Way to Home"
   image: /assets/images/art/piece-1.png
   description: "Acrylic on canvas, 24x36 in."
   status: available
 
 - title: "Piece Two"
-  image: /assets/images/art/piece-2.jpg
-  description: "Oil on canvas, 18x24 in."
+  image: /assets/images/art/pieceTwo.png
+  description: "Pen art on paper, 18x24 in."
   status: sold
 
 - title: "Piece Three"
-  image: /assets/images/art/piece-3.jpg
-  description: "Acrylic on wood panel, 12x12 in."
+  image: /assets/images/art/pieceThree.png
+  description: "Pen art on paper, 18x24 in.."
   status: available
 
 - title: "Piece Four"
-  image: /assets/images/art/piece-4.jpg
-  description: "Mixed media, 30x40 in."
+  image: /assets/images/art/pieceFour.png
+  description: "Pen art on paper, 18x24 in."
   status: available
