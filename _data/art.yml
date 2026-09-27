@@ -28,32 +28,32 @@
   description: "Pen art on paper, 18x24 in."
   status: available
 
-  - title: "The night wolf"
+- title: "The night wolf"
   image: /assets/images/art/pieceSeven.png
   description: "Pen art on paper, 18x24 in."
   status: available
 
-  - title: "The World of Imagination"
+- title: "The World of Imagination"
   image: /assets/images/art/pieceEight.png
   description: "Pen art on paper, 18x24 in."
   status: available
 
-  - title: "The Home"
+- title: "The Home"
   image: /assets/images/art/pieceNine.png
   description: "Pen art on paper, 18x24 in."
   status: available
 
-  - title: "The secret eyes"
+- title: "The secret eyes"
   image: /assets/images/art/pieceTen.png
   description: "Pen art on paper, 18x24 in."
   status: available
 
-  - title: "The love"
+- title: "The love"
   image: /assets/images/art/pieceEleven.png
   description: "Pen art on paper, 18x24 in."
   status: available
 
-  - title: "The red eyes"
+- title: "The red eyes"
   image: /assets/images/art/pieceTwelve.png
   description: "Pen art on paper, 18x24 in."
   status: available
