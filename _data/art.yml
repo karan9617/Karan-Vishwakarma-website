@@ -3,17 +3,57 @@
   description: "Acrylic on canvas, 24x36 in."
   status: available
 
-- title: "Piece Two"
+- title: "The memorable house"
   image: /assets/images/art/pieceTwo.png
   description: "Pen art on paper, 18x24 in."
   status: sold
 
-- title: "Piece Three"
+- title: "The ship that never sank"
   image: /assets/images/art/pieceThree.png
   description: "Pen art on paper, 18x24 in.."
   status: available
 
-- title: "Piece Four"
+- title: "The deserted lighthouse"
   image: /assets/images/art/pieceFour.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+- title: "The innocent one"
+  image: /assets/images/art/pieceFive.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+- title: "The deserted house"
+  image: /assets/images/art/pieceSix.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+  - title: "The night wolf"
+  image: /assets/images/art/pieceSeven.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+  - title: "The World of Imagination"
+  image: /assets/images/art/pieceEight.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+  - title: "The Home"
+  image: /assets/images/art/pieceNine.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+  - title: "The secret eyes"
+  image: /assets/images/art/pieceTen.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+  - title: "The love"
+  image: /assets/images/art/pieceEleven.png
+  description: "Pen art on paper, 18x24 in."
+  status: available
+
+  - title: "The red eyes"
+  image: /assets/images/art/pieceTwelve.png
   description: "Pen art on paper, 18x24 in."
   status: available
