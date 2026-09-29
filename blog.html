@@ -5,12 +5,22 @@ title: Blog
 <h1>Blog</h1>
 <p>Short updates and my thoughts on the world. Also follow me on medium for more updates: <a href="https://medium.com/@karan.vish17" target="_blank" rel="noopener">MEDIUM</a></p>
 
-<div class="post-list">
+<div class="post-grid">
   {% for post in site.posts %}
-  <div class="post-list-item">
-    <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-  </div>
+  <a href="{{ post.url | relative_url }}" class="post-card">
+    {% if post.image %}
+    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-image">
+    {% endif %}
+    <div class="post-card-body">
+      <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h3>{{ post.title }}</h3>
+      {% if post.description %}
+      <p>{{ post.description }}</p>
+      {% elsif post.excerpt %}
+      <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      {% endif %}
+    </div>
+  </a>
   {% else %}
   <p>No posts yet.</p>
   {% endfor %}

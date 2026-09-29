@@ -205,3 +205,29 @@ code {
 @media (max-width: 480px) {
   .hero-inner { flex-direction: column; align-items: flex-start; }
 }
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+.post-card {
+  display: block;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+}
+.post-card:hover { border-color: var(--accent); }
+.post-card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+.post-card-body { padding: 16px 20px; }
+.post-card-body .meta { color: var(--text-dim); font-size: 0.8rem; }
+.post-card-body h3 { margin: 6px 0 8px; }
+.post-card-body p { color: var(--text-dim); margin: 0; font-size: 0.95rem; }
